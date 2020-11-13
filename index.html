@@ -45,12 +45,14 @@
                 </div>
                 <div>
                     <label for="">Tipo de seguro</label> <!--Lo uso para colocar varias opciones que el usuario pueda seleccionar-->
-                        <select name="franquicia" id="franquicia_id">
-                                <option value=""disabled>Elige un tipo de seguro</option>
-                                <option value="">Básico</option>
-                                <option value="">Inermedio</option>
-                                <option value="">Premium</option>
+                        <select name="tipo_seguro" id="tipo_seguro" onchange="valorSeguro()"> <!--ONCHANGE es para captar los cambios en el select y al ejecutarse el CHANGE se ejecuta la función valorSeguro-->
+                                <option value="">Elije un tipo de seguro</option>
+                                <option value="1">Básico</option>
+                                <option value="2">Inermedio</option>
+                                <option value="3">Premium</option>
                         </select>
+                        <div id="valor_seguro"></div>
+                        
                 </div>
                 <div>
                     <p>
